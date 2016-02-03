@@ -40,12 +40,12 @@ a, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
 .table-striped  a {
   text-decoration: none!important;
   padding: 8px 10px;
-  background: $primary;
+  background: $secondary;
   border-radius: 2px;
   color: $ternary;
   &:hover {
     background: $ternary;
-    color: $primary;
+    color: $secondary;
   }
 }
 
