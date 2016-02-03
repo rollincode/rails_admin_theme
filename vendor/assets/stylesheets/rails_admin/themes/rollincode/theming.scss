@@ -36,7 +36,7 @@ a, .navbar-default .navbar-nav > li > a {
 a.navbar-brand {
   color: white!important;
   &:hover {
-    color: $ternary;
+    color: $ternary!important;
   }
 }
 
