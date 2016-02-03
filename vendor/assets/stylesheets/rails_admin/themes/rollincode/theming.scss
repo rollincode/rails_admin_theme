@@ -26,11 +26,18 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
   padding: 10px 15px;
 }
 
-a, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+a, .navbar-default .navbar-nav > li > a {
   &:hover {
     color: $ternary;
   }
   color: white;
+}
+
+a.navbar-brand {
+  color: white!important;
+  &:hover {
+    color: $ternary;
+  }
 }
 
 .fieldset a {
