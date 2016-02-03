@@ -49,6 +49,11 @@ a, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   }
 }
 
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 #fields_to_export .control-label {
   text-align: left;
   margin-bottom: 0;
