@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = RailsAdminRollincode::VERSION
   s.authors     = ["KOVACS Nicolas"]
   s.email       = ["perso.nkovacs@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsAdminRollincode."
-  s.description = "TODO: Description of RailsAdminRollincode."
+  s.homepage    = "https://github.com/rollincode/rails_admin_theme"
+  s.summary     = "Rails_Admin theme"
+  s.description = "Rails_Admin theme"
   s.license     = "MIT"
 
   s.files = Dir["{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
