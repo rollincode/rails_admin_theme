@@ -3,48 +3,64 @@
     margin-right: 10px;
   }
 }
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
   background: $ternary;
 }
-
+.alert-info {
+  background-color: #3498db;
+  border: 0;
+  color: #fff;
+}
+.alert-success {
+  background-color: #2ecc71;
+  border: 0;
+  color: #fff;
+}
+.alert-danger {
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+}
+.alert {
+  border-radius: 2px;
+}
 .navbar-default {
   background: $primary;
   border: none;
 }
-
 body.rails_admin .sidebar-nav .dropdown-header {
   // color: $ternary;
   display: none;
 }
-
 body.rails_admin .sidebar-nav {
   background: $secondary;
 }
-
 body.rails_admin .sidebar-nav > .nav-stacked > li > a {
   padding: 10px 15px;
 }
-
-a, .navbar-default .navbar-nav > li > a {
+a,
+.navbar-default .navbar-nav > li > a {
   &:hover {
     color: $ternary;
   }
   color: white;
 }
-
 a.navbar-brand {
   color: white!important;
   &:hover {
     color: $ternary!important;
   }
 }
-
+h1,
+.h1 {
+  font-size: 25px;
+}
 .fieldset a {
   color: $ternary!important;
 }
-
-.table-striped  a {
+.table-striped a {
   text-decoration: none!important;
   padding: 8px 10px;
   background: $secondary;
@@ -55,36 +71,34 @@ a.navbar-brand {
     color: $secondary;
   }
 }
-
-.ui-state-default a:link, .ui-state-default a:visited {
+.ui-state-default a:link,
+.ui-state-default a:visited {
   color: white;
   text-decoration: none;
 }
-
 #fields_to_export .control-label {
   text-align: left;
   margin-bottom: 0;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
-.table-striped > td, body.rails_admin .table td {
+.table-striped > td,
+body.rails_admin .table td {
   vertical-align: middle;
   line-height: 40px;
 }
-
 td.carrierwave_type .img-thumbnail {
   max-width: 40px;
 }
-
 .img-thumbnail {
   max-width: 125px;
 }
-
 .breadcrumb .false a {
   color: #C4C4C4!important;
 }
-
 .nav-stacked > li + li {
   margin-top: 0;
+}
+.progress {
+  border-radius: 2px;
 }
