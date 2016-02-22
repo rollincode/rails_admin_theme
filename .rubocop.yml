@@ -1,0 +1,78 @@
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'tmp/**/*'
+    - 'vendor/bundle/**/*'
+
+Metrics/AbcSize:
+  Max: 15
+
+Metrics/BlockNesting:
+  Max: 3
+
+Metrics/ClassLength:
+  CountComments: false
+  Max: 100
+
+Metrics/CyclomaticComplexity:
+  Max: 6
+
+Metrics/LineLength:
+  AllowURI: true
+  Enabled: false
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 15
+
+Metrics/ModuleLength:
+  Max: 100
+
+Metrics/ParameterLists:
+  Max: 4
+  CountKeywordArgs: true
+
+Metrics/PerceivedComplexity:
+  Max: 7
+
+Style/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Style/CollectionMethods:
+  PreferredMethods:
+    map:      'collect'
+    reduce:   'inject'
+    find:     'detect'
+    find_all: 'select'
+
+Style/Documentation:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - 'lib/rails_admin/bootstrap-sass.rb'
+
+Style/Lambda:
+  Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: 'comma'
