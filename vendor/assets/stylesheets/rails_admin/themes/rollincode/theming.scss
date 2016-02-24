@@ -8,6 +8,17 @@
 .nav-pills > li.active > a:focus {
   background: $ternary;
 }
+.btn {
+  border-radius: 2px;
+}
+.nav-tabs {
+  li {
+    border-radius: 2px;
+  }
+  a.dropdown-toggle {
+    color: $black;
+  }
+}
 .alert-info {
   background-color: #3498db;
   border: 0;
@@ -30,9 +41,19 @@
   background: $primary;
   border: none;
 }
+body {
+  color: $black;
+}
 body.rails_admin .sidebar-nav .dropdown-header {
   // color: $ternary;
   display: none;
+}
+body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown {
+  background-color: inherit;
+  text-shadow: none;
+}
+body.rails_admin .table .header:after {
+  visibility: visible!important;
 }
 body.rails_admin .sidebar-nav {
   background: $secondary;
