@@ -1,5 +1,4 @@
 //= require froala_editor.min
-// Include the plugins you want:
 //= require plugins/block_styles.min
 //= require plugins/colors.min
 //= require plugins/media_manager.min
