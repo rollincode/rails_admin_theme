@@ -31,7 +31,13 @@ button:hover
 }
 .btn {
   border-radius: 2px;
-  color: white;
+  color: white!important;
+}
+.btn-default {
+  color: $black!important;
+}
+.well {
+  border-radius: 2px;
 }
 .nav-tabs {
   li {
