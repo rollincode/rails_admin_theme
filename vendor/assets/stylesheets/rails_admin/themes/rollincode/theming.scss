@@ -3,6 +3,27 @@
     margin-right: 10px;
   }
 }
+.content {
+  a {
+    color: $ternary;
+  }
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+  outline:0 !important;
+  -webkit-appearance:none;
+}
+.form-control {
+  border-radius: 2px;
+}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -17,6 +38,7 @@
   }
   a.dropdown-toggle {
     color: $black;
+    border-radius: 2px 2px 0 0;
   }
 }
 .alert-info {
