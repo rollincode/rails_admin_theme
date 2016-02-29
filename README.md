@@ -6,6 +6,12 @@ Its provides news colors, adjustments and a brand new tree view menu.
 
 ![DASHBOARD](http://i.imgur.com/Mtsr0l4.png, "rollincode")
 
+![DASHBOARD](http://i.imgur.com/78BseNp.png, "rollincode")
+
+![DASHBOARD](http://i.imgur.com/ShGFOg6.png, "rollincode")
+
+You can fork it and change `variables.scss` as you want !
+
 Like we can't include custom js in a bundled theme with raild_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
 It will make the javascript menu works.
 
