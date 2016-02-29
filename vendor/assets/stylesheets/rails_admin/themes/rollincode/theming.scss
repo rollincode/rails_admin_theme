@@ -5,11 +5,9 @@
   transition: all $time ease;
 }
 
-
 body {
   color: $black;
   background: $background;
-  @include transition('.6s');
 }
 
 body.rails_admin .sidebar-nav .dropdown-header {
