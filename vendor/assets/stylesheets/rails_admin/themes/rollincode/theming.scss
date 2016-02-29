@@ -60,6 +60,18 @@ button:hover {
   -webkit-appearance: none;
 }
 
+input[tpye="file"] {
+  padding: 6px 12px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  background: darken($ternary, 20%);
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
 .links {
   ul li:nth-child(1) {
     a {
