@@ -1,19 +1,65 @@
-.sidebar-nav {
-  i {
-    margin-right: 10px;
+@mixin transition($time) {
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  -o-transition: all $time ease;
+  transition: all $time ease;
+}
+
+
+body {
+  color: $black;
+  background: $background;
+  @include transition('.6s');
+}
+
+body.rails_admin .sidebar-nav .dropdown-header {
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: normal;
+  text-transform: inherit;
+  cursor: pointer;
+  &::after {
+    content: "\f138";
+    position: absolute;
+    right: 15px;
+    color: white;
+    font-family: 'FontAwesome', sans-serif;
   }
 }
 
-.page-header {
-  margin-top: 0;
-  h1 {
-    background: $ternary;
-    padding: 10px 15px;
-    color: white;
-    border-radius: 2px;
-    text-transform: uppercase;
-    margin-top: 0;
-  }
+body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown {
+  background-color: inherit;
+  text-shadow: none;
+}
+
+body.rails_admin .table .header:after {
+  visibility: visible !important;
+}
+
+body.rails_admin .sidebar-nav {
+  background: $primary;
+}
+
+.nav .nav-pills .nav-stacked {
+  margin-top: 4px;
+}
+body.rails_admin .sidebar-nav > .nav-stacked > li > a {
+  padding: 10px 15px;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover {
+  outline: 0 !important;
+  -webkit-appearance: none;
 }
 
 .links {
@@ -37,68 +83,22 @@
   }
 }
 
-.content {
-  margin: 19px 0 15px 0;
-  background: white;
-  padding: 20px;
-  a {
-    color: $ternary;
-  }
+.alert-info {
+  background-color: #3498db;
+  border: 0;
+  color: #fff;
 }
 
-textarea:hover,
-input:hover,
-textarea:active,
-input:active,
-textarea:focus,
-input:focus,
-button:focus,
-button:active,
-button:hover {
-  outline: 0 !important;
-  -webkit-appearance: none;
+.alert-success {
+  background-color: #2ecc71;
+  border: 0;
+  color: #fff;
 }
 
-.form-control {
-  border-radius: 2px;
-}
-
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus,
-.nav-pills > li > a:hover,
-.nav-pills > li > a:focus
-{
-}
-
-.sub-menu a {
-  color: white;
-  padding: 10px 15px 10px 30px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  font-weight: normal;
-  text-transform: inherit;
-  cursor: pointer;
-  display: block;
-  text-decoration: none;
-}
-
-.sub-menu-container {
-  background: darken($primary, 5%);
-  li a {
-    color: #EEE;
-  }
-  li.active a {
-    background: darken($primary, 10%);
-    color: $ternary!important;
-    &:hover {
-      color: $ternary!important;
-    }
-  }
-}
-
-.label-warning {
-  padding: 5px;
+.alert-danger {
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
 }
 
 .btn {
@@ -121,18 +121,23 @@ button:hover {
 }
 
 .btn-primary {
-  background: #29B6F6;
-  border-color: darken(#29B6F6, 10%);
+  background: darken($ternary, 20%);
+  border-color: darken($ternary, 20%);
   &:hover {
-    background: #29B6F6;
-    border-color: darken(#29B6F6, 10%);
+    background: darken($ternary, 20%);
+    border-color: darken($ternary, 20%);
   }
 }
 
-.well {
+.alert {
   border-radius: 2px;
 }
 
+.sidebar-nav {
+  i {
+    margin-right: 10px;
+  }
+}
 .nav-tabs > li > a {
   border-radius: 2px 2px 0 0;
 }
@@ -146,51 +151,14 @@ button:hover {
   }
 }
 
-.alert-info {
-  background-color: #3498db;
-  border: 0;
-  color: #fff;
-}
-
-.alert-success {
-  background-color: #2ecc71;
-  border: 0;
-  color: #fff;
-}
-
-.alert-danger {
-  background-color: #e74c3c;
-  border: 0;
-  color: #fff;
-}
-
-.alert {
-  border-radius: 2px;
-}
-
 .navbar-default {
-  background: #57A55A;
+  background: darken($ternary, 20%);
   border: 0;
 }
 
-body {
-  color: $black;
-  background: $background;
-}
-
-body.rails_admin .sidebar-nav .dropdown-header {
-  // color: $ternary;
-  //display: none;
-  //background: $ternary;
-  color: white;
-  padding: 10px 15px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  font-weight: normal;
-  text-transform: inherit;
-  cursor: pointer;
+.dropdown-header.open {
   &::after {
-    content: "\f138";
+    content: "\f13a"!important;
     position: absolute;
     right: 15px;
     color: white;
@@ -204,27 +172,6 @@ body.rails_admin .sidebar-nav .dropdown-header {
 .dropdown-header.active {
   background: $ternary;
 }
-
-body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown {
-  background-color: inherit;
-  text-shadow: none;
-}
-
-body.rails_admin .table .header:after {
-  visibility: visible !important;
-}
-
-body.rails_admin .sidebar-nav {
-  background: $primary;
-}
-
-.nav .nav-pills .nav-stacked {
- margin-top: 4px;
-}
-body.rails_admin .sidebar-nav > .nav-stacked > li > a {
-  padding: 10px 15px;
-}
-
 a,
 .navbar-default .navbar-nav > li > a {
   &:hover {
@@ -233,14 +180,90 @@ a,
   color: white;
 }
 
+.navbar-header {
+  margin-left: -15px;
+}
+
 a.navbar-brand {
+  width: 100%;
   color: white !important;
   cursor: pointer!important;
+  background: darken($ternary, 10%)!important;
   &:hover {
     background: darken($ternary, 10%)!important;
     color: white!important;
   }
 }
+
+.page-header {
+  margin-top: 0;
+  h1 {
+    background: $ternary;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}
+
+.content {
+  margin: 19px 0 15px 0;
+  background: white;
+  padding: 20px;
+  a {
+    color: $ternary;
+  }
+}
+
+.form-control {
+  border-radius: 2px;
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus
+{
+  color: $ternary!important;
+}
+
+.sub-menu a {
+  color: white;
+  padding: 10px 15px 10px 30px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: normal;
+  text-transform: inherit;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.sub-menu-container {
+  background: darken($primary, 5%);
+  li a {
+    color: #EEE;
+    &:hover {
+      color: $ternary!important;
+    }
+  }
+  li.active a {
+    background: darken($primary, 10%);
+    color: $ternary!important;
+    &:hover {
+      color: $ternary!important;
+    }
+  }
+}
+
+.label-warning {
+  padding: 5px;
+}
+
+
+.well {
+  border-radius: 2px;
+}
+
 
 h1,
 .h1 {
@@ -306,7 +329,6 @@ td.carrierwave_type .img-thumbnail {
 }
 
 // WYSIWYG
-
 .froala-editor {
   background: $primary !important;
   border-color: $ternary !important;
