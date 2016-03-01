@@ -344,35 +344,3 @@ td.carrierwave_type .img-thumbnail {
 .progress {
   border-radius: 2px;
 }
-
-// WYSIWYG
-.froala-editor {
-  background: $primary !important;
-  border-color: $ternary !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-}
-
-.froala-editor button.fr-bttn, .froala-editor button.fr-trigger {
-  color: white !important;
-  &:hover {
-    background: $ternary !important;
-    color: $primary !important;
-  }
-}
-
-.froala-editor .fr-dropdown .fr-dropdown-menu li a {
-  color: white !important;
-  &:hover {
-    background: $ternary !important;
-  }
-}
-
-.froala-editor .fr-dropdown .fr-dropdown-menu li.active a, .froala-editor .fr-trigger.active {
-  color: $ternary !important;
-}
-
-.froala-editor .fr-dropdown .fr-dropdown-menu {
-  background: $primary !important;
-  color: white !important;
-}
