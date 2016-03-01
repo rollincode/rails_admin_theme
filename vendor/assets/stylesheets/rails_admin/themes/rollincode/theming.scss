@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 @mixin transition($time) {
   -webkit-transition: all $time ease;
   -moz-transition: all $time ease;
@@ -8,6 +10,7 @@
 body {
   color: $black;
   background: $background;
+  font-family: 'Raleway', sans-serif;
 }
 
 body.rails_admin .sidebar-nav .dropdown-header {
@@ -112,20 +115,28 @@ button:hover {
 .btn-info {
   background: $primary;
   border-color: darken($primary, 10%);
-  &:hover {
+  &:hover, &:focus, &:target, &:active {
     background: $ternary;
     border-color: darken($ternary, 10%);
     color: $primary;
   }
 }
+.btn-info.disabled {
+  background: lighten($primary, 10%);
+  border-color: lighten($primary, 10%);
+}
 
 .btn-primary {
   background: darken($ternary, 20%);
   border-color: darken($ternary, 20%);
-  &:hover {
+  &:hover, &:focus, &:target, &:active {
     background: darken($ternary, 20%);
     border-color: darken($ternary, 20%);
   }
+}
+.btn-primary.disabled {
+  background: lighten($ternary, 20%);
+  border-color: ligten($ternary, 20%);
 }
 
 .alert {
