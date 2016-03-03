@@ -4,7 +4,7 @@
 This theme provide a modern override of default bootstrap 3 rails_admin theme.
 Its provides news colors, adjustments and a brand new tree view menu.
 
-![DASHBOARD](http://i.imgur.com/Mtsr0l4.png, "rollincode")
+![DASHBOARD](http://i.imgur.com/SL33qRC.jpg, "rollincode")
 
 ![DASHBOARD](http://i.imgur.com/78BseNp.png, "rollincode")
 
@@ -16,7 +16,38 @@ Like we can't include custom js in a bundled theme with raild_admin for now, so,
 It will make the javascript menu works.
 
 ````
-$(doument).on('ready pjax:success', function() {
+//= require icheck
+
+$(document).on('ready pjax:success', function() {
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-grey selectable',
+    radioClass: 'iradio_flat-grey'
+  });
+
+  var checkBox = $('.table-striped > tbody > tr > td:first-child input[type="checkbox"]');
+  var togglerCheck = $('th.shrink input[type="checkbox"]');
+
+  checkBox.on('ifChecked', function(e) {
+    $(this).parent().parent().parent().addClass('row-highlight');
+  });
+  checkBox.on('ifUnchecked', function(e) {
+    $(this).parent().parent().parent().removeClass('row-highlight');
+  });
+
+  togglerCheck.on('ifChecked', function(e) {
+    checkBox.iCheck('check');
+    handleHighlight();
+  });
+  togglerCheck.on('ifUnchecked', function(e) {
+    checkBox.iCheck('uncheck');
+    $('.table-striped tbody tr').removeClass('row-highlight');
+  });
+  function handleHighlight() {
+    $('.table-striped tbody td').has('div.checked').each(function(index, item) {
+      $(item).parent().addClass('row-highlight');
+    });
+  }
+
   handleActiveBase();
   function handleActiveBase() {
     $('.sub-menu').each(function () {
@@ -61,6 +92,7 @@ $(function () {
       }
     });
   }
+
 
   $('.dropdown-header').bind('click', function () {
     $('.dropdown-header').removeClass('open');

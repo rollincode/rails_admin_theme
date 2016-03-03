@@ -1,4 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import "froala_editor.min";
+@import "froala_style.min";
+@import "plugins/char_counter.min";
+@import "plugins/code_view.min";
+@import "plugins/colors.min";
+@import "plugins/emoticons.min";
+@import "plugins/file.min";
+@import "plugins/fullscreen.min";
+@import "plugins/image.min";
+@import "plugins/image_manager.min";
+@import "plugins/line_breaker.min";
+@import "plugins/quick_insert.min";
+@import "plugins/table.min";
+@import "plugins/video.min";
+@import "font-awesome";
+@import "icheck/flat/all";
 
 @mixin transition($time) {
   -webkit-transition: all $time ease;
@@ -121,6 +137,7 @@ button:hover {
     color: $primary;
   }
 }
+
 .btn-info.disabled {
   background: lighten($primary, 10%);
   border-color: lighten($primary, 10%);
@@ -134,6 +151,7 @@ button:hover {
     border-color: darken($ternary, 20%);
   }
 }
+
 .btn-primary.disabled {
   background: lighten($ternary, 20%);
   border-color: ligten($ternary, 20%);
@@ -245,7 +263,7 @@ a.navbar-brand {
     }
     color: white;
     &:hover {
-      background: darken($ternary, 10%)!important;
+      background: darken($ternary, 10%) !important;
     }
     a {
       &:hover {
@@ -325,10 +343,29 @@ h1,
   padding-bottom: 8px;
 }
 
-.table-striped > td,
+.table-striped th,
+.table-striped td,
 body.rails_admin .table td {
   vertical-align: middle;
   line-height: 40px;
+  border-right: 1px solid #ddd;
+  padding: 6px 11px;
+}
+
+.row-highlight td {
+  background: rgba($ternary, .1)!important;
+}
+
+.table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td {
+  padding: 15px 5px;
+}
+.table-striped {
+  border: 1px solid #ddd;
+  border-top: 4px solid $ternary;
+}
+
+th.shrink {
+  padding: 14px 11px!important;
 }
 
 td.carrierwave_type .img-thumbnail {
@@ -354,4 +391,51 @@ td.carrierwave_type .img-thumbnail {
 
 .progress {
   border-radius: 2px;
+}
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#sortable li {
+  color: white;
+  cursor: pointer;
+}
+
+#sortable li, .ui-state-highlight {
+  display: inline-block;
+}
+
+.sortable-container {
+  width: 100%;
+  background: lighten($ternary, 5%);
+  margin-bottom: 15px;
+}
+
+.ref_number, .li_sortable_label {
+  float: left;
+  padding: 10px 5px;
+}
+
+.li_sortable_label {
+  background: lighten($ternary, 5%);
+  color: $primary;
+  padding: 10px 15px;
+}
+
+.ref_number {
+  color: $ternary;
+  background: $primary;
+  padding: 10px 15px;
+  border-left: 2px solid darken($ternary, 20%);
+}
+
+.ui-state-highlight {
+  padding: 10px 15px;
+  margin: 0 15px 15px 15px;
+  width: 100%;
+  min-height: 40px;
 }
