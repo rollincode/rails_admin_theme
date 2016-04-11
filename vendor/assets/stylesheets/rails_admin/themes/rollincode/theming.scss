@@ -453,17 +453,18 @@ td.carrierwave_type .img-thumbnail {
 .fieldset {
   dl {
     dt span.label-info {
+      text-align: left;
+      display: block;
       padding: 10px;
       font-size: 13px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
     dd.well {
-      padding: 0;
+      padding: 10px;
       border-top: 0;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
   }
-
 }
