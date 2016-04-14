@@ -319,7 +319,7 @@ h1,
   color: $ternary !important;
 }
 
-.table-striped a {
+.table-striped td:not(.image_field) a {
   text-decoration: none !important;
   padding: 8px 10px;
   border-radius: 2px;
