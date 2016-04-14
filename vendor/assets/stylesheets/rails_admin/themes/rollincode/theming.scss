@@ -81,22 +81,28 @@ button:hover {
 }
 
 .links {
-  ul li:nth-child(1) {
+  ul li {
     a {
-      background: #29B6F6;
       color: white;
+      background: $primary;
     }
-  }
-  ul li:nth-child(2) {
-    a {
-      background: #66BB6A;
-      color: white;
+    &:nth-child(1) {
+      a {
+        background: #29B6F6;
+        color: white;
+      }
     }
-  }
-  ul li:nth-child(3) {
-    a {
-      background: #ef5350;
-      color: white
+    &:nth-child(2) {
+      a {
+        background: #66BB6A;
+        color: white;
+      }
+    }
+    &:nth-child(3) {
+      a {
+        background: #ef5350;
+        color: white
+      }
     }
   }
 }
@@ -438,4 +444,27 @@ td.carrierwave_type .img-thumbnail {
   margin: 0 15px 15px 15px;
   width: 100%;
   min-height: 40px;
+}
+
+.well {
+  box-shadow: none;
+}
+
+.fieldset {
+  dl {
+    dt span.label-info {
+      text-align: left;
+      display: block;
+      padding: 10px;
+      font-size: 13px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    dd.well {
+      padding: 10px;
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
 }
