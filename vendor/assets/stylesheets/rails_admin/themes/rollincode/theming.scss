@@ -474,11 +474,12 @@ td.carrierwave_type .img-thumbnail {
   }
 }
 
-.bootstrap-datetimepicker-widget {
+body.bootstrap-datetimepicker-widget {
   color: #333;
   td, th {
     text-align: center;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
   }
 }
