@@ -47,14 +47,12 @@ body.rails_admin .sidebar-nav .dropdown-header {
 }
 
 body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown,
-body:not(.bootstrap-datetimepicker-widget)
 {
   background-color: inherit;
   text-shadow: none;
 }
 
 body.rails_admin .table .header:after,
-body:not(.bootstrap-datetimepicker-widget)
 {
   visibility: visible !important;
 }
@@ -329,7 +327,7 @@ h1,
   color: $ternary !important;
 }
 
-body:not(.bootstrap-datetimepicker-widget), .table-striped td:not(.image_field) a {
+.table-striped td:not(.image_field) a {
   text-decoration: none !important;
   padding: 8px 10px;
   border-radius: 2px;
@@ -356,7 +354,6 @@ body:not(.bootstrap-datetimepicker-widget), .table-striped td:not(.image_field) 
 .table-striped th,
 .table-striped td,
 body.rails_admin .table td
-body:not(.bootstrap-datetimepicker-widget)
 {
   vertical-align: middle;
   line-height: 40px;
@@ -369,7 +366,6 @@ body:not(.bootstrap-datetimepicker-widget)
 }
 
 .table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td,
-body:not(.bootstrap-datetimepicker-widget)
 {
   padding: 15px 5px;
 }
@@ -475,5 +471,14 @@ td.carrierwave_type .img-thumbnail {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
+  }
+}
+
+.bootstrap-datetimepicker-widget {
+  color: #333;
+  td, th {
+    text-align: center;
+    width: 20px;
+    height: 20px;
   }
 }
