@@ -353,8 +353,7 @@ h1,
 
 .table-striped th,
 .table-striped td,
-body.rails_admin .table td
-{
+body.rails_admin .table td {
   vertical-align: middle;
   line-height: 40px;
   border-right: 1px solid #ddd;
@@ -362,7 +361,7 @@ body.rails_admin .table td
 }
 
 .row-highlight td {
-  background: rgba($ternary, .1)!important;
+  background: rgba($ternary, .1) !important;
 }
 
 .table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td,
@@ -376,7 +375,7 @@ body.rails_admin .table td
 }
 
 th.shrink {
-  padding: 14px 11px!important;
+  padding: 14px 11px !important;
 }
 
 td.carrierwave_type .img-thumbnail {
@@ -474,12 +473,16 @@ td.carrierwave_type .img-thumbnail {
   }
 }
 
-body .bootstrap-datetimepicker-widget {
+.bootstrap-datetimepicker-widget table td.day {
   color: #333;
-  td, th {
-    text-align: center;
-    width: 10px;
-    height: 10px;
-    line-height: 10px;
-  }
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.bootstrap-datetimepicker-widget table td span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  color: #333;
 }
