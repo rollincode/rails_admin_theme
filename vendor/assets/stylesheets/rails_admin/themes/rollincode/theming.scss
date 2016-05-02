@@ -46,14 +46,16 @@ body.rails_admin .sidebar-nav .dropdown-header {
   }
 }
 
-.table:not(.bootstrap-datetimepicker-widget),
-body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown {
+body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown,
+body:not(.bootstrap-datetimepicker-widget)
+{
   background-color: inherit;
   text-shadow: none;
 }
 
-.table:not(.bootstrap-datetimepicker-widget),
-body.rails_admin .table .header:after {
+body.rails_admin .table .header:after,
+body:not(.bootstrap-datetimepicker-widget)
+{
   visibility: visible !important;
 }
 
@@ -327,7 +329,7 @@ h1,
   color: $ternary !important;
 }
 
-.table:not(.bootstrap-datetimepicker-widget), .table-striped td:not(.image_field) a {
+body:not(.bootstrap-datetimepicker-widget), .table-striped td:not(.image_field) a {
   text-decoration: none !important;
   padding: 8px 10px;
   border-radius: 2px;
@@ -351,10 +353,11 @@ h1,
   padding-bottom: 8px;
 }
 
-.table:not(.bootstrap-datetimepicker-widget),
 .table-striped th,
 .table-striped td,
-body.rails_admin .table td {
+body.rails_admin .table td
+body:not(.bootstrap-datetimepicker-widget)
+{
   vertical-align: middle;
   line-height: 40px;
   border-right: 1px solid #ddd;
@@ -365,8 +368,9 @@ body.rails_admin .table td {
   background: rgba($ternary, .1)!important;
 }
 
-.table:not(.bootstrap-datetimepicker-widget),
-.table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td {
+.table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td,
+body:not(.bootstrap-datetimepicker-widget)
+{
   padding: 15px 5px;
 }
 
