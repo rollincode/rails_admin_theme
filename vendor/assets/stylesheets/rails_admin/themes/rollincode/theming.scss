@@ -29,6 +29,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a.navbar-brand {
+  padding-top: 12px;
+}
+
 body.rails_admin .sidebar-nav .dropdown-header {
   color: white;
   padding: 10px 15px;
@@ -419,6 +423,25 @@ td.carrierwave_type .img-thumbnail {
   display: inline-block;
 }
 
+#rails_admin_nestable {
+  label {
+    padding: 0;
+  }
+}
+
+.dd-handle .dd3-handle, .dd3-content {
+  height: inherit;
+}
+
+.dd3-content .pull-right a {
+  background: none!important;
+  color: #000!important;
+}
+
+.dd3-content {
+  margin: 10px 0!important;
+}
+
 .sortable-container {
   width: 100%;
   background: lighten($ternary, 5%);
@@ -488,8 +511,10 @@ td.carrierwave_type .img-thumbnail {
   color: #333;
 }
 
-.has_one_association_type {
-  background: #F3F1F1;
-  padding: 25px 15px;
-  margin: 25px 15px;
+#edit_page {
+  .has_one_association_type {
+    background: #F3F1F1;
+    padding: 25px 15px;
+    margin: 25px 15px!important;
+  }
 }
