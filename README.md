@@ -12,6 +12,26 @@ Its provides news colors, adjustments and a brand new tree view menu.
 
 You can fork it and change `variables.scss` as you want !
 
+Gemfile
+
+```
+gem 'wysiwyg-rails'
+gem 'icheck-rails'
+gem 'rails_admin_rollincode', git: 'https://github.com/rollincode/rails_admin_theme'
+gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git', branch: 'master'
+```
+
+application.rb
+```
+ENV['RAILS_ADMIN_THEME'] = 'rollincode'
+```
+
+You'll have to run theses commands
+
+`rake assets:clean` and `rake assets:precompile`
+
+May be you should run `rm -rf tmp/cache/assets/development/`, for changes to take effect.
+
 Like we can't include custom js in a bundled theme with raild_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
 It will make the javascript menu works.
 
