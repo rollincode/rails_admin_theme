@@ -21,7 +21,7 @@ gem 'rails_admin_rollincode', git: 'https://github.com/rollincode/rails_admin_th
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git', branch: 'master'
 ```
 
-application.rb
+Inside `config/application.rb`, just after `Bundler.require`
 ```
 ENV['RAILS_ADMIN_THEME'] = 'rollincode'
 ```
