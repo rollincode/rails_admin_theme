@@ -14,7 +14,7 @@ You can fork it and change `variables.scss` as you want !
 
 Gemfile
 
-```
+```ruby
 gem 'wysiwyg-rails'
 gem 'icheck-rails'
 gem 'rails_admin_rollincode', git: 'https://github.com/rollincode/rails_admin_theme'
@@ -22,20 +22,23 @@ gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git', branch: 'ma
 ```
 
 Inside `config/application.rb`, just after `Bundler.require`
-```
+
+```ruby
 ENV['RAILS_ADMIN_THEME'] = 'rollincode'
 ```
 
-You'll have to run theses commands
+You'll have to run theses commands for changes to take effect
 
-`rake assets:clean` and `rake assets:precompile`
+`rake assets:clean && rake assets:precompile`
 
-May be you should run `rm -rf tmp/cache/assets/development/`, for changes to take effect.
+or
+
+`rm -rf tmp/cache/assets/development/`
 
 Like we can't include custom js in a bundled theme with raild_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
 It will make the javascript menu works.
 
-````
+````javascript
 //= require icheck
 
 $(document).on('ready pjax:success', function() {
