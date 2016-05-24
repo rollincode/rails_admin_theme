@@ -33,7 +33,7 @@ You'll have to run theses commands for changes to take effect
 
 or
 
-`rm -rf tmp/cache/assets/development/`.
+`rm -rf tmp/cache/assets/development/`
 
 Like we can't include custom js in a bundled theme with raild_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
 It will make the javascript menu works.
