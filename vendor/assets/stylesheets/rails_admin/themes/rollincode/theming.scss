@@ -73,6 +73,10 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
   padding: 10px 15px;
 }
 
+a.navbar-brand {
+  line-height: 25px;
+}
+
 textarea:hover,
 input:hover,
 textarea:active,
