@@ -15,8 +15,6 @@ You can fork it and change `variables.scss` as you want !
 Gemfile
 
 ```ruby
-gem 'wysiwyg-rails'
-gem 'icheck-rails'
 gem 'rails_admin_rollincode', git: 'https://github.com/rollincode/rails_admin_theme'
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git', branch: 'master'
 ```
