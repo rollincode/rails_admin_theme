@@ -8,14 +8,12 @@ Gem::Specification.new do |s|
   s.name        = "rails_admin_rollincode"
   s.version     = RailsAdminRollincode::VERSION
   s.authors     = ["KOVACS Nicolas"]
-  s.email       = ["perso.nkovacs@gmail.com"]
+  s.email       = ["pro.nicovak@gmail.com"]
   s.homepage    = "https://github.com/rollincode/rails_admin_theme"
   s.summary     = "Rails_Admin theme"
   s.description = "Rails_Admin theme"
   s.license     = "MIT"
 
   s.files = Dir["{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.add_dependency "icheck-rails", "~> 1.0.2.1"
-  s.add_dependency "wysiwyg-rails", ">= 1.0.3"
   s.add_dependency 'rails', ['>= 4.0', '< 6']
 end

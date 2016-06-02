@@ -1,20 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import "froala_editor.min";
-@import "froala_style.min";
-@import "plugins/char_counter.min";
-@import "plugins/code_view.min";
-@import "plugins/colors.min";
-@import "plugins/emoticons.min";
-@import "plugins/file.min";
-@import "plugins/fullscreen.min";
-@import "plugins/image.min";
-@import "plugins/image_manager.min";
-@import "plugins/line_breaker.min";
-@import "plugins/quick_insert.min";
-@import "plugins/table.min";
-@import "plugins/video.min";
-@import "font-awesome";
-@import "icheck/flat/all";
 
 @mixin transition($time) {
   -webkit-transition: all $time ease;
@@ -135,8 +119,8 @@ a.navbar-brand {
   background: $primary;
   border-color: darken($primary, 10%);
   &:hover, &:focus, &:target, &:active {
-    background: $ternary;
-    border-color: darken($ternary, 10%);
+    background: $secondary;
+    border-color: darken($secondary, 10%);
     color: $primary;
   }
 }
@@ -147,17 +131,17 @@ a.navbar-brand {
 }
 
 .btn-primary {
-  background: darken($ternary, 20%);
-  border-color: darken($ternary, 20%);
+  background: darken($secondary, 20%);
+  border-color: darken($secondary, 20%);
   &:hover, &:focus, &:target, &:active {
-    background: darken($ternary, 20%);
-    border-color: darken($ternary, 20%);
+    background: darken($secondary, 20%);
+    border-color: darken($secondary, 20%);
   }
 }
 
 .btn-primary.disabled {
-  background: lighten($ternary, 20%);
-  border-color: ligten($ternary, 20%);
+  background: lighten($secondary, 20%);
+  border-color: ligten($secondary, 20%);
 }
 
 .alert {
@@ -184,7 +168,7 @@ a.navbar-brand {
 }
 
 .navbar-default {
-  background: darken($ternary, 20%);
+  background: darken($secondary, 20%);
   border: 0;
 }
 
@@ -199,17 +183,17 @@ a.navbar-brand {
 }
 
 .dropdown-header:hover {
-  background: $ternary;
+  background: $secondary;
 }
 
 .dropdown-header.active {
-  background: $ternary;
+  background: $secondary;
 }
 
 a,
 .navbar-default .navbar-nav > li > a {
   &:hover {
-    color: $ternary;
+    color: $secondary;
   }
   color: white;
 }
@@ -222,9 +206,9 @@ a.navbar-brand {
   width: 100%;
   color: white !important;
   cursor: pointer !important;
-  background: darken($ternary, 10%) !important;
+  background: darken($secondary, 10%) !important;
   &:hover {
-    background: darken($ternary, 10%) !important;
+    background: darken($secondary, 10%) !important;
     color: white !important;
   }
 }
@@ -232,7 +216,7 @@ a.navbar-brand {
 .page-header {
   margin-top: 0;
   h1 {
-    background: $ternary;
+    background: $secondary;
     padding: 10px 15px;
     color: white;
     border-radius: 2px;
@@ -246,7 +230,7 @@ a.navbar-brand {
   background: white;
   padding: 20px;
   a {
-    color: $ternary;
+    color: $secondary;
   }
 }
 
@@ -256,7 +240,7 @@ a.navbar-brand {
 
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
-  color: $ternary !important;
+  color: $secondary !important;
 }
 
 .root_links {
@@ -266,7 +250,7 @@ a.navbar-brand {
     }
     color: white;
     &:hover {
-      background: darken($ternary, 10%) !important;
+      background: darken($secondary, 10%) !important;
     }
     a {
       &:hover {
@@ -293,14 +277,14 @@ a.navbar-brand {
   li a {
     color: #EEE;
     &:hover {
-      color: $ternary !important;
+      color: $secondary !important;
     }
   }
   li.active a {
     background: darken($primary, 10%);
-    color: $ternary !important;
+    color: $secondary !important;
     &:hover {
-      color: $ternary !important;
+      color: $secondary !important;
     }
   }
 }
@@ -319,16 +303,16 @@ h1,
 }
 
 .fieldset a {
-  color: $ternary !important;
+  color: $secondary !important;
 }
 
 .table-striped td:not(.image_field) a {
   text-decoration: none !important;
   padding: 8px 10px;
   border-radius: 2px;
-  color: $ternary;
+  color: $secondary;
   &:hover {
-    background: $ternary;
+    background: $secondary;
     color: $primary;
   }
 }
@@ -356,7 +340,7 @@ body.rails_admin .table td {
 }
 
 .row-highlight td {
-  background: rgba($ternary, .1) !important;
+  background: rgba($secondary, .1) !important;
 }
 
 .table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td,
@@ -366,7 +350,7 @@ body.rails_admin .table td {
 
 .table-striped {
   border: 1px solid #ddd;
-  border-top: 4px solid $ternary;
+  border-top: 4px solid $secondary;
 }
 
 th.shrink {
@@ -435,7 +419,7 @@ td.carrierwave_type .img-thumbnail {
 
 .sortable-container {
   width: 100%;
-  background: lighten($ternary, 5%);
+  background: lighten($secondary, 5%);
   margin-bottom: 15px;
 }
 
@@ -445,16 +429,16 @@ td.carrierwave_type .img-thumbnail {
 }
 
 .li_sortable_label {
-  background: lighten($ternary, 5%);
+  background: lighten($secondary, 5%);
   color: $primary;
   padding: 10px 15px;
 }
 
 .ref_number {
-  color: $ternary;
+  color: $secondary;
   background: $primary;
   padding: 10px 15px;
-  border-left: 2px solid darken($ternary, 20%);
+  border-left: 2px solid darken($secondary, 20%);
 }
 
 .ui-state-highlight {
@@ -505,7 +489,6 @@ td.carrierwave_type .img-thumbnail {
 #edit_page {
   .has_one_association_type {
     background: #F3F1F1;
-    padding: 25px 15px;
     margin: 25px 15px!important;
   }
 }
