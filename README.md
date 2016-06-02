@@ -15,7 +15,7 @@ You can fork it and change `variables.scss` as you want !
 Gemfile
 
 ```ruby
-gem 'rails_admin_rollincode', '>= 1.0'
+gem 'rails_admin_rollincode', '~> 1.0'
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
 ```
 
