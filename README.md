@@ -1,5 +1,7 @@
-[WIP] - RailsAdmin Rollincode Theme
+RailsAdmin Rollincode Theme
 --------------------
+
+[![Gem Version](https://badge.fury.io/rb/rails_admin_rollincode.svg)](https://badge.fury.io/rb/rails_admin_rollincode)
 
 This theme provide a modern override of default bootstrap 3 rails_admin theme.
 Its provides news colors, adjustments and a brand new tree view menu.
