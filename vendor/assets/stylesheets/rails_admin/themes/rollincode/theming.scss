@@ -13,10 +13,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-a.navbar-brand {
-  padding-top: 12px;
-}
-
 body.rails_admin .sidebar-nav .dropdown-header {
   color: white;
   padding: 10px 15px;
@@ -55,10 +51,6 @@ body.rails_admin .sidebar-nav {
 
 body.rails_admin .sidebar-nav > .nav-stacked > li > a {
   padding: 10px 15px;
-}
-
-a.navbar-brand {
-  line-height: 25px;
 }
 
 .links {
@@ -204,6 +196,9 @@ a,
 
 a.navbar-brand {
   width: 100%;
+  line-height: 25px;
+  padding-top: 12px;
+  white-space: nowrap;
   color: white !important;
   cursor: pointer !important;
   background: darken($secondary, 10%) !important;
