@@ -36,7 +36,7 @@ body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown,
   text-shadow: none;
 }
 
-body.rails_admin .table .header:after,
+body.rails_admin .table .header:after
 {
   visibility: visible !important;
 }
@@ -123,8 +123,8 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 }
 
 .btn-primary {
-  background: darken($secondary, 20%);
-  border-color: darken($secondary, 20%);
+  background: $secondary;
+  border-color: $secondary;
   &:hover, &:focus, &:target, &:active {
     background: darken($secondary, 20%);
     border-color: darken($secondary, 20%);
@@ -160,7 +160,7 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 }
 
 .navbar-default {
-  background: darken($secondary, 20%);
+  background: $secondary;
   border: 0;
 }
 
