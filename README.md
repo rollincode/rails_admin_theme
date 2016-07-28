@@ -35,7 +35,7 @@ or
 
 `rm -rf tmp/cache/assets/development/`
 
-Like we can't include custom js in a bundled theme with raild_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
+Like we can't include custom js in a bundled theme with rails_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
 It will make the javascript menu works.
 
 ````javascript
