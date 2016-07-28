@@ -7,7 +7,7 @@ require "rails_admin_rollincode/version"
 Gem::Specification.new do |s|
   s.name        = "rails_admin_rollincode"
   s.version     = RailsAdminRollincode::VERSION
-  s.authors     = ["KOVACS Nicolas"]
+  s.authors     = ["KOVACS Nicolas", "VIDEAUD Matthieu"]
   s.email       = ["pro.nicovak@gmail.com"]
   s.homepage    = "https://github.com/rollincode/rails_admin_theme"
   s.summary     = "Rails_Admin theme"
