@@ -3,8 +3,8 @@ RailsAdmin Rollincode Theme
 
 [![Gem Version](https://badge.fury.io/rb/rails_admin_rollincode.svg)](https://badge.fury.io/rb/rails_admin_rollincode)
 
-This theme provide a modern override of default bootstrap 3 rails_admin theme.
-Its provides news colors, adjustments and a brand new tree view menu.
+A modern override of default bootstrap 3 rails_admin theme.
+It provides news colors, adjustments and a brand new tree view menu.
 
 ![DASHBOARD](http://i.imgur.com/SL33qRC.jpg, "rollincode")
 
@@ -35,7 +35,7 @@ or
 
 `rm -rf tmp/cache/assets/development/`
 
-Like we can't include custom js in a bundled theme with rails_admin for now, so, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
+Like we can't include custom js in a bundled theme with rails_admin for now, you have to add in your `app/assets/javascripts/rails_admin/custom/ui.js` the following code :
 It will make the javascript menu works.
 
 ````javascript
