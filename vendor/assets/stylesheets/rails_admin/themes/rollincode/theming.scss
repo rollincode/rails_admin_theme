@@ -13,6 +13,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+body.rails_admin .form-horizontal textarea {
+  width: 100%;
+}
+
 body.rails_admin .sidebar-nav .dropdown-header {
   color: white;
   padding: 10px 15px;
