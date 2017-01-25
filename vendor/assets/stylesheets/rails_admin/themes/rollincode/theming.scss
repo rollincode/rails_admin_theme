@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
-@mixin transition($time) {
-  -webkit-transition: all $time ease;
-  -moz-transition: all $time ease;
-  -o-transition: all $time ease;
-  transition: all $time ease;
-}
-
 body {
   color: $black;
   background: $background;
@@ -18,30 +11,31 @@ body.rails_admin .form-horizontal textarea {
 }
 
 body.rails_admin .sidebar-nav .dropdown-header {
-  color: white;
+  color: #fff;
   padding: 10px 15px;
   font-size: 14px;
   line-height: 1.42857143;
   font-weight: normal;
   text-transform: inherit;
   cursor: pointer;
+
   &::after {
     content: "\f138";
     position: absolute;
     right: 15px;
-    color: white;
+    color: #fff;
     font-family: 'FontAwesome', sans-serif;
   }
 }
 
-body.rails_admin .table .headerSortUp, body.rails_admin .table .headerSortDown,
-{
+,
+body.rails_admin .table .headerSortDown,
+body.rails_admin .table .headerSortUp {
   background-color: inherit;
   text-shadow: none;
 }
 
-body.rails_admin .table .header:after
-{
+body.rails_admin .table .header:after {
   visibility: visible !important;
 }
 
@@ -60,25 +54,28 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 .links {
   ul li {
     a {
-      color: white;
+      color: #fff;
       background: $primary;
     }
+
     &:nth-child(1) {
       a {
         background: #29B6F6;
-        color: white;
+        color: #fff;
       }
     }
+
     &:nth-child(2) {
       a {
         background: #66BB6A;
-        color: white;
+        color: #fff;
       }
     }
+
     &:nth-child(3) {
       a {
         background: #ef5350;
-        color: white
+        color: #fff;
       }
     }
   }
@@ -104,7 +101,7 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 
 .btn {
   border-radius: 2px;
-  color: white !important;
+  color: #fff !important;
 }
 
 .btn-default {
@@ -114,7 +111,11 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 .btn-info {
   background: $primary;
   border-color: darken($primary, 10%);
-  &:hover, &:focus, &:target, &:active {
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:target {
     background: $secondary;
     border-color: darken($secondary, 10%);
     color: $primary;
@@ -129,7 +130,11 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 .btn-primary {
   background: $secondary;
   border-color: $secondary;
-  &:hover, &:focus, &:target, &:active {
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:target {
     background: darken($secondary, 20%);
     border-color: darken($secondary, 20%);
   }
@@ -158,7 +163,9 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
   li {
     border-radius: 2px;
   }
-  a.dropdown-toggle, a {
+
+  a,
+  a.dropdown-toggle {
     color: $black;
   }
 }
@@ -173,7 +180,7 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
     content: "\f13a" !important;
     position: absolute;
     right: 15px;
-    color: white;
+    color: #fff;
     font-family: 'FontAwesome', sans-serif;
   }
 }
@@ -186,12 +193,12 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
   background: $secondary;
 }
 
-a,
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,
+a {
   &:hover {
     color: $secondary;
   }
-  color: white;
+  color: #fff;
 }
 
 .navbar-header {
@@ -202,21 +209,23 @@ a.navbar-brand {
   line-height: 25px;
   padding-top: 12px;
   white-space: nowrap;
-  color: white !important;
+  color: #fff !important;
   cursor: pointer !important;
   background: darken($secondary, 10%) !important;
+
   &:hover {
     background: darken($secondary, 10%) !important;
-    color: white !important;
+    color: #fff !important;
   }
 }
 
 .page-header {
   margin-top: 0;
+
   h1 {
     background: $secondary;
     padding: 10px 15px;
-    color: white;
+    color: #fff;
     border-radius: 2px;
     text-transform: uppercase;
     margin-top: 0;
@@ -224,9 +233,10 @@ a.navbar-brand {
 }
 
 .content {
-  margin: 19px 0 15px 0;
-  background: white;
+  margin: 19px 0 15px;
+  background: #fff;
   padding: 20px;
+
   a {
     color: $secondary;
   }
@@ -236,30 +246,35 @@ a.navbar-brand {
   border-radius: 2px;
 }
 
-.nav-pills > li > a:hover,
-.nav-pills > li > a:focus {
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover {
   color: $secondary !important;
 }
 
 .root_links {
-  .dashboard_root_link, .edit_user_root_link, .dashboard_root_link, li {
+  .dashboard_root_link,
+  .edit_user_root_link,
+
+  li {
     .label-danger {
       padding: 5px 10px;
     }
-    color: white;
+    color: #fff;
+
     &:hover {
       background: darken($secondary, 10%) !important;
     }
+
     a {
       &:hover {
-        color: white !important;
+        color: #fff !important;
       }
     }
   }
 }
 
 .sub-menu a {
-  color: white;
+  color: #fff;
   padding: 10px 15px 10px 30px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -272,15 +287,19 @@ a.navbar-brand {
 
 .sub-menu-container {
   background: darken($primary, 5%);
+
   li a {
     color: #EEE;
+
     &:hover {
       color: $secondary !important;
     }
   }
+
   li.active a {
     background: darken($primary, 10%);
     color: $secondary !important;
+
     &:hover {
       color: $secondary !important;
     }
@@ -295,8 +314,8 @@ a.navbar-brand {
   border-radius: 2px;
 }
 
-h1,
-.h1 {
+.h1,
+h1 {
   font-size: 20px;
 }
 
@@ -309,6 +328,7 @@ h1,
   padding: 8px 10px;
   border-radius: 2px;
   color: $secondary;
+
   &:hover {
     background: $secondary;
     color: $primary;
@@ -317,7 +337,7 @@ h1,
 
 .ui-state-default a:link,
 .ui-state-default a:visited {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -328,8 +348,8 @@ h1,
   padding-bottom: 8px;
 }
 
-.table-striped th,
 .table-striped td,
+.table-striped th,
 body.rails_admin .table td {
   vertical-align: middle;
   line-height: 40px;
@@ -341,8 +361,13 @@ body.rails_admin .table td {
   background: rgba($secondary, .1) !important;
 }
 
-.table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td,
-{
+,
+.table-condensed > tbody > tr > td,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > td,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > thead > tr > th {
   padding: 15px 5px;
 }
 
@@ -388,11 +413,12 @@ td.carrierwave_type .img-thumbnail {
 }
 
 #sortable li {
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
-#sortable li, .ui-state-highlight {
+#sortable li,
+.ui-state-highlight {
   display: inline-block;
 }
 
@@ -402,7 +428,8 @@ td.carrierwave_type .img-thumbnail {
   }
 }
 
-.dd-handle .dd3-handle, .dd3-content {
+.dd-handle .dd3-handle,
+.dd3-content {
   height: inherit;
 }
 
@@ -412,7 +439,7 @@ td.carrierwave_type .img-thumbnail {
 }
 
 .dd3-content {
-  margin: 10px 0!important;
+  margin: 10px 0 !important;
 }
 
 .sortable-container {
@@ -421,7 +448,8 @@ td.carrierwave_type .img-thumbnail {
   margin-bottom: 15px;
 }
 
-.ref_number, .li_sortable_label {
+.li_sortable_label,
+.ref_number {
   float: left;
   padding: 10px 5px;
 }
@@ -441,7 +469,7 @@ td.carrierwave_type .img-thumbnail {
 
 .ui-state-highlight {
   padding: 10px 15px;
-  margin: 0 15px 15px 15px;
+  margin: 0 15px 15px;
   width: 100%;
   min-height: 40px;
 }
@@ -460,6 +488,7 @@ td.carrierwave_type .img-thumbnail {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
+
     dd.well {
       padding: 10px;
       border-top: 0;
@@ -487,7 +516,7 @@ td.carrierwave_type .img-thumbnail {
 #edit_page {
   .has_one_association_type {
     background: #F3F1F1;
-    margin: 25px 15px!important;
+    margin: 25px 15px !important;
   }
 }
 

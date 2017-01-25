@@ -1,0 +1,21 @@
+exclude:
+  - '*.min.scss'
+  - '*.min.sass'
+
+linters:
+  PropertySortOrder:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  Comment:
+    enabled: false
+  VendorPrefix:
+    enabled: false
+  IdSelector:
+    enabled: false
+  NestingDepth:
+    enabled: false
+  SelectorDepth:
+    enabled: false
+  QualifyingElement:
+    enabled: false        
