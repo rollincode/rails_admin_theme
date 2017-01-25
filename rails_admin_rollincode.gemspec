@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ['KOVACS Nicolas', 'VIDEAUD Matthieu']
   s.email       = ['pro.nicovak@gmail.com']
   s.homepage    = 'https://github.com/rollincode/rails_admin_theme'
-  s.summary     = 'Rails_Admin theme'
-  s.description = 'Rails_Admin theme'
+  s.summary     = 'Rails_Admin FLAT theme overhaul'
+  s.description = 'Rails_Admin FLAT theme overhaul'
   s.license     = 'MIT'
 
   s.files = Dir['{lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
