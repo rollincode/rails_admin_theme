@@ -18,4 +18,4 @@ linters:
   SelectorDepth:
     enabled: false
   QualifyingElement:
-    enabled: false        
+    enabled: false

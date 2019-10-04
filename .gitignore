@@ -8,4 +8,5 @@ pkg/
 !/log/.keep
 /tmp
 .idea/
+.vscode/
 .rbenv-gemsets
